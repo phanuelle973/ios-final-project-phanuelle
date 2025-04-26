@@ -3,6 +3,11 @@ Original App Design Project - README
 
 # BibleReels
 
+## Project progress
+- [x] Setting up files (adding view controllers, etc)
+- [ ] Logo
+- [x] Color scheme
+
 ## Table of Contents
 
 1. [Overview](#Overview)
@@ -11,7 +16,7 @@ Original App Design Project - README
 4. [Schema](#Schema)
 
 ## Overview
-BibleReels is an app that connects people all over the world who wish to stay consistent in reading the Holy Bible by maintaining a streak and pushing each other to strive hgiher. 
+BibleReels is an app that connects people all over the world who wish to stay consistent in reading the Holy Bible by maintaining a streak and pushing each other to strive higher. 
 
 ### Description
 
