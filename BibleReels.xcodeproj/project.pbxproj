@@ -10,9 +10,22 @@
 		3282FAF62DBC9FA3007BE20E /* BibleReels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleReels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3282FB432DBCA97E007BE20E /* Exceptions for "BibleReels" folder in "BibleReels" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3282FAF52DBC9FA3007BE20E /* BibleReels */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3282FAF82DBC9FA3007BE20E /* BibleReels */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3282FB432DBCA97E007BE20E /* Exceptions for "BibleReels" folder in "BibleReels" target */,
+			);
 			path = BibleReels;
 			sourceTree = "<group>";
 		};
