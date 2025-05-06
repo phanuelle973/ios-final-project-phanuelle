@@ -14,10 +14,45 @@ class LoginViewController: UIViewController {
         view.backgroundColor = .white
         title = "Login"
 
+        let usernameField = UITextField()
+        usernameField.placeholder = "Username"
+        usernameField.borderStyle = .roundedRect
 
-        // Do any additional setup after loading the view.
+        let passwordField = UITextField()
+        passwordField.placeholder = "Password"
+        passwordField.borderStyle = .roundedRect
+        passwordField.isSecureTextEntry = true
+
+        let loginButton = UIButton(type: .system)
+        loginButton.setTitle("Log In", for: .normal)
+        loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        loginButton.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+
+        let stack = UIStackView(arrangedSubviews: [usernameField, passwordField, loginButton])
+        stack.axis = .vertical
+        stack.spacing = 16
+        stack.translatesAutoresizingMaskIntoConstraints = false
+
+        view.addSubview(stack)
+
+        NSLayoutConstraint.activate([
+            stack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            stack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
+        ])
     }
-    
+
+    @objc func handleLogin() {
+        let alert = UIAlertController(
+            title: "✅ Logged In",
+            message: "Welcome back!",
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+
 
     /*
     // MARK: - Navigation

@@ -13,6 +13,25 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = "New Post"
+
+        let postButton = UIButton(type: .system)
+        postButton.setTitle("Post Bible Reel", for: .normal)
+        postButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        postButton.addTarget(self, action: #selector(postTapped), for: .touchUpInside)
+        
+        postButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(postButton)
+        
+        NSLayoutConstraint.activate([
+            postButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            postButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+
+    @objc func postTapped() {
+        let alert = UIAlertController(title: "✅ Bible Reel Posted", message: "Keep up the consistency!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
     }
 
 
