@@ -6,7 +6,7 @@ Original App Design Project - README
 ## Project progress
 - [x] Setting up files (adding view controllers, etc)
 - [ ] Logo
-- [x] Color scheme
+- [ ] Color scheme
 
 ## Table of Contents
 
